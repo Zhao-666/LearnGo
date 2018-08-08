@@ -29,6 +29,17 @@ func variableSimpleValue() {
 	fmt.Println(a, b, c, d)
 }
 
+func consts() {
+	const (
+		cpp = iota
+		_
+		php
+		python
+		jjj
+	)
+	fmt.Println(cpp, jjj, php, python)
+}
+
 func main() {
 	fmt.Println("HelloWorld")
 	variableEmptyValue()
@@ -36,4 +47,5 @@ func main() {
 	variableTypeValue()
 	variableSimpleValue()
 	fmt.Println(aa, bb)
+	consts()
 }
