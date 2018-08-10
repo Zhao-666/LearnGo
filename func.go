@@ -29,11 +29,15 @@ func apply(op func(int, int) int, a, b int) int {
 	return op(a, b)
 }
 
-func pow(a,b int) int {
-	return int(math.Pow(float64(a),float64(b)))
+func pow(a, b int) int {
+	return int(math.Pow(float64(a), float64(b)))
+}
+
+func swap(a, b int) {
+	b, a = a, b
 }
 
 func main() {
 	fmt.Println(eval(3, 4, "*"))
-	fmt.Println(apply(pow,3,4))
+	fmt.Println(apply(pow, 3, 4))
 }
